@@ -184,7 +184,7 @@ public class Main2Activity extends AppCompatActivity {
                                     val2 += Character.toString(value.charAt(j));
                                     j++;
                                 }
-                                content += "<br><br><strong>Rating : </strong> <u>&nbsp;IMDb</u> - " + val2;
+                                content += "<br><br><strong>Rating : </strong> &nbsp;<u>IMDb</u> - " + val2;
                                 val = 1;
                             } else {
                                 content += "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>Rotten Tomatoes</u> - " + value;
@@ -236,7 +236,7 @@ public class Main2Activity extends AppCompatActivity {
                     if (!url2.equals("") && !url2.equals("N/A")) {
                         new ImageLoadTask(url2, imageView).execute();
                         imageView.setAdjustViewBounds(true);
-                        imageView.setPadding(100, 70, 100, 50);
+                        imageView.setPadding(100, 70, 100, 0);
                     }
                     textView2.setPadding(0,0,0,90);
                     //content += "\nPlot : " +  + "\n\nRuntime : " + jsonObject.getString("Runtime");//+ "\n\nRating : " + jsonObject.getString("rating") + "\n\nRating Votes : " + jsonObject.getString("rating_votes") + "\n";
