@@ -6,6 +6,6 @@ This Android Application can be used to get information like plot, rating, genre
 
 ## Demonstration
 
-<img src="Screenshots/1.png" />
+<img src="Screenshots/1.PNG" height=400/>
 
 
